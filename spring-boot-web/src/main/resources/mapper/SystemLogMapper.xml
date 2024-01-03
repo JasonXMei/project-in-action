@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.boot.mapper.SystemLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.spring.boot.entity.SystemLog">
+        <id column="id" property="id" />
+        <result column="created_time" property="createdTime" />
+        <result column="last_modified_time" property="lastModifiedTime" />
+        <result column="deleted" property="deleted" />
+        <result column="version" property="version" />
+        <result column="spend_time" property="spendTime" />
+        <result column="uri" property="uri" />
+        <result column="method" property="method" />
+        <result column="header" property="header" />
+        <result column="parameter" property="parameter" />
+        <result column="response" property="response" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, created_time, last_modified_time, deleted, version, spend_time, uri, method, header, parameter, response
+    </sql>
+
+</mapper>
